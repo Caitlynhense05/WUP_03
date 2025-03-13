@@ -57,4 +57,10 @@ The probability of getting these results is one out of ten thousand. Further ana
 
 ## Conclusions
 
+I created a boxplot to visually represent the consumption across different rows, showing the difference in consumption levels. The numerical summary showed that the back row consumed twice as much alcohol compared to the other rows. When comparing three or more groups, one way ANOVA is used to determine if there are significant differences among them. If the ANOVA test yields a P value between 0 and 1, further investigation is needed, which might involve more tests to understand the specific differences between groups. To further explore these differences, I performed additional analyses and plotted a better model that shows the specific contrast in alcohol consumption and in the back
+
+
+
+
+
 
