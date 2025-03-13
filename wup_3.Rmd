@@ -48,6 +48,13 @@ The back seat shows the highest values and most variability with a median of 3.5
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The probability of getting these results is one out of ten thousand. Further analysis is required to determine which sets differ from one another.
+
 ## Conclusions
 
 
