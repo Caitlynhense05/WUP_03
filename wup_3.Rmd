@@ -25,9 +25,11 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ## Now add in boxplot
 
 ```{r}
-basicCN + geom_boxplot()
+boxplot(alcohol~Seat,data=davisdata)
 ```
   
+The boxes aren't disjointed. In the boxplot, the median of the back box is higher than that of the front and middle boxes. The front and middle boxes show similar sizes, though the middle box has a greater number of outliers compared to the front box. 
+ 
   
 ### get fancy  
 
@@ -35,7 +37,12 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
-## Numerical Summarys 
+## Numerical Summarys
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
 
 ## Inferential Tests
 
